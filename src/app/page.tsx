@@ -1,15 +1,16 @@
 import { Body } from "@/components/Body";
+import { AppContainer } from "@/components/Container";
 import { Header } from "@/components/Header";
 import { MeetupDescription } from "@/components/MeetupDescription";
+import { SuggestedCafes } from "@/components/SuggestedCafes";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="max-w-4xl">
-        <Header />
-        <MeetupDescription />
-        <Body />
-      </div>
-    </main>
+    <AppContainer>
+      <Header />
+      <MeetupDescription />
+      <SuggestedCafes />
+      <Body />
+    </AppContainer>
   );
 }
